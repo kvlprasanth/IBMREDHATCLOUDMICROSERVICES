@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- 	<bean name="theCoach" class="org.example.demo.model.SwimmingCoach">
+		<constructor-arg name="fortuneService"
+			ref="myFortuneService" />
+	</bean> -->
+	
+<!-- 	<bean name="theCoach" class="org.example.demo.model.CricketCoach">
+	<property name="fortuneService" ref="myFortuneService"/>
+	</bean>
+	<bean name="myFortuneService"
+		class="org.example.demo.model.SadFortuneService"/>
+	 -->
+	 
+	 <bean name="cust1" class="org.example.demo.model2.Customer">
+	 
+	 <property name="customerId" value="10"/>
+	 <property name="customerName" value="John Doe"/>
+	 <property name="address" ref="theAddress"/>
+	 
+	 </bean>
+	 <bean name="theAddress" class="org.example.demo.model2.Address">
+	 <constructor-arg index="0" value="Telengana"/>
+	 <constructor-arg index="1" value="India"/>
+	 <constructor-arg index="2" value="Hyderabad"/>
+	 <constructor-arg index="3" value="56001"/>
+	 </bean>
+	 
+	 
+</beans>
